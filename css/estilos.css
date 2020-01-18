@@ -64,6 +64,9 @@ p {
 .boton-negro {
     background-color: black;
 }
+.boton-naranja {
+    background-color: #ba7413;
+}
 
 .contenedor {
     margin: 0 auto;
@@ -119,7 +122,14 @@ p {
     margin-top: 80px;
 }
 /*Partes principales*/
+main{
+    display: flex;
+    flex-direction: column;
+}
 /*blog*/
+.blog{
+    order: 2;
+}
 .entrada{
     border-bottom: 1px solid black;
     padding: 20px 0 20px ;
@@ -138,6 +148,29 @@ p {
 
 .blog h2 {
     margin: 20px 0;
+}
+/*Talleres y cursos*/
+.sidebar{
+    order: 1;
+}
+.sidebar h2{
+    margin-bottom: 30px;
+}
+.curso{
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+.curso:last-of-type{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.detallesCursos p span{
+    font-weight: 400;
+}
+.detallesCursos p{
+    margin: 10px 0 20px 0;
 }
 
 @media (min-width: 769px) {
@@ -170,5 +203,22 @@ p {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    /*Talleres y cursos*/
+    main{
+        padding: 20px 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .blog{
+        order: initial;
+        flex: 0 0 calc(66.6% - 20px);
+    }
+    .sidebar{
+        order: initial;
+        flex: 0 0 calc(33.3% - 20px);
+    }
+    .boton{
+        width: auto;
     }
 }
