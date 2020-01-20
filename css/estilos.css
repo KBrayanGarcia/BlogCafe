@@ -94,10 +94,6 @@ p {
     font-weight: 700;
 }
 
-.menu {
-    margin-top: 20px;
-}
-
 .menu ul {
     list-style: none;
     padding: 0;
@@ -106,8 +102,7 @@ p {
 
 .menu ul li {
     align-items: center;
-    height: 30px;
-    margin-bottom: 20px;
+    height: 60px;
 }
 
 .menu ul li:last-of-type {
@@ -116,8 +111,15 @@ p {
 
 .menu ul li a {
     height: inherit;
-    display: block;
-    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.menu ul li a:hover{
+    background-color: rgba(0,0,0,.5);
+    transition: .4s ease-in-out;
 }
 
 .content-hero {
@@ -203,16 +205,25 @@ main {
         height: 600px;
     }
 
-
+    .menu{
+        margin: 0;
+        height: inherit;
+    }
+    .menu ul{
+        height: inherit;
+    }
     .menu ul li {
-        margin: 0 20px 0 0;
+        height: inherit;
         display: inline-block;
     }
 
     .menu ul li:last-of-type {
         margin-right: 0;
     }
-
+    .menu ul li a{
+        padding: 20px;
+        display: flex;
+    }
     .content-hero {
         margin-top: 130px;
     }
@@ -221,6 +232,15 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 70px;
+    }
+
+    .logo {
+        height: inherit;
+    }
+
+    .logo h1 {
+        height: inherit;
     }
 
     /*Talleres y cursos*/
