@@ -54,7 +54,7 @@ p {
 
 .boton {
     display: inline-block;
-    padding: 20px 15px;
+    padding: 15px 20px;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
@@ -64,13 +64,15 @@ p {
 .boton-negro {
     background-color: black;
 }
+
 .boton-naranja {
     background-color: #ba7413;
 }
 
 .contenedor {
     margin: 0 auto;
-    max-width: 95%;
+    width: 95%;
+    max-width: 1200px;
 }
 
 /* header */
@@ -121,23 +123,29 @@ p {
 .content-hero {
     margin-top: 80px;
 }
+
 /*Partes principales*/
-main{
+main {
     display: flex;
     flex-direction: column;
 }
+
 /*blog*/
-.blog{
+.blog {
     order: 2;
 }
-.entrada{
+
+.entrada {
     border-bottom: 1px solid black;
-    padding: 20px 0 20px ;
+    padding: 20px 0 20px;
+    line-height: 2;
 }
-.entrada:last-of-type{
+
+.entrada:last-of-type {
     border-bottom: none;
 
 }
+
 .contenedor-img {
     margin: 0;
 }
@@ -149,43 +157,52 @@ main{
 .blog h2 {
     margin: 20px 0;
 }
+
 /*Talleres y cursos*/
-.sidebar{
+.sidebar {
     order: 1;
 }
-.sidebar h2{
+
+.sidebar h2 {
     margin-bottom: 30px;
 }
-.curso{
+
+.curso {
     margin-bottom: 20px;
     border-bottom: 1px solid black;
     padding-bottom: 20px;
 }
-.curso:last-of-type{
+
+.curso:last-of-type {
     border-bottom: none;
     padding-bottom: 0;
 }
 
-.detallesCursos p span{
+.detallesCursos p span {
     font-weight: 400;
 }
-.detallesCursos p{
+
+.detallesCursos p {
     margin: 10px 0 20px 0;
 }
+
 /* Footer */
+.footer-site {
+    background-color: black;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-site .logo h1 {
+    color: white;
+    font-size: 2.2em;
+}
 
 @media (min-width: 769px) {
-    .contenedor {
-        max-width: 80%;
-    }
-
     .header {
         height: 80vh;
     }
 
-    .menu {
-        margin-top: 0;
-    }
 
     .menu ul li {
         margin: 0 20px 0 0;
@@ -205,21 +222,25 @@ main{
         justify-content: space-between;
         align-items: center;
     }
+
     /*Talleres y cursos*/
-    main{
+    main {
         padding: 20px 0;
         flex-direction: row;
         justify-content: space-between;
     }
-    .blog{
+
+    .blog {
         order: initial;
         flex: 0 0 calc(66.6% - 20px);
     }
-    .sidebar{
+
+    .sidebar {
         order: initial;
         flex: 0 0 calc(33.3% - 20px);
     }
-    .boton{
+
+    .boton {
         width: auto;
     }
 }
