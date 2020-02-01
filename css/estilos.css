@@ -209,6 +209,25 @@ main {
     text-align: center;
     padding: 20px 0;
 }
+
+/* pagina cursos */
+.curso-pagina{
+    border-bottom: 1px solid black;
+    padding: 20px 0 10px 0;
+}
+.curso-pagina:last-of-type{
+    border-bottom: none;
+}
+.titulo-cursos{
+    padding: 20px 0;
+    text-align: center;
+}
+.informacion-cursos{
+    line-height: 2;
+}
+.curso-pagina .detalles-curso{
+    padding: 20px 0;
+}
 @media (min-width: 769px) {
     .header {
         height: 600px;
@@ -278,12 +297,20 @@ main {
         justify-content: space-between;
     }
     .contenedor-img{
-        display: flex;
-        align-items: center;
-        flex: 0 0 calc(50% - 10px);
+           flex: 0 0 calc(50% - 10px);
     }
     .informacion-nosotros{
         flex: 0 0 calc(50% - 10px);
     }
-
+    /* pagina interior cursos */
+    .curso-pagina{
+        justify-content: space-between;
+        display: flex;
+    }
+    .curso-pagina .contenedor-img{
+        flex: 0 0 calc(34% - 20px);
+    }
+    .curso-pagina .detalles-curso{
+        flex: 0 0 calc(66% - 10px);
+    }
 }
