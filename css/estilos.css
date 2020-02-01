@@ -228,6 +228,10 @@ main {
 .curso-pagina .detalles-curso{
     padding: 20px 0;
 }
+/* pagina interna formulario*/
+.titulo-formulario{
+    text-align: center;
+}
 @media (min-width: 769px) {
     .header {
         height: 600px;
