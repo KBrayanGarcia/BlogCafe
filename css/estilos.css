@@ -63,6 +63,7 @@ p {
 }
 
 .boton-negro {
+    color: white;
     background-color: black;
 }
 
@@ -118,8 +119,9 @@ p {
     padding: 20px;
     box-sizing: border-box;
 }
-.menu ul li a:hover{
-    background-color: rgba(0,0,0,.5);
+
+.menu ul li a:hover {
+    background-color: rgba(0, 0, 0, .5);
     transition: .4s ease-in-out;
 }
 
@@ -128,7 +130,8 @@ p {
 }
 
 /*Partes principales*/
-main {
+.main-prinicipal {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
 }
@@ -200,50 +203,84 @@ main {
     color: white;
     font-size: 2.2em;
 }
+
 /* Paginas interiores */
 /* nosotros */
-.informacion-nosotros{
+.informacion-nosotros {
     line-height: 2;
 }
-.titulo-nosotros{
+
+.titulo-nosotros {
     text-align: center;
     padding: 20px 0;
 }
 
 /* pagina cursos */
-.curso-pagina{
+.curso-pagina {
     border-bottom: 1px solid black;
     padding: 20px 0 10px 0;
 }
-.curso-pagina:last-of-type{
+
+.curso-pagina:last-of-type {
     border-bottom: none;
 }
-.titulo-cursos{
+
+.titulo-cursos {
     padding: 20px 0;
     text-align: center;
 }
-.informacion-cursos{
+
+.informacion-cursos {
     line-height: 2;
 }
-.curso-pagina .detalles-curso{
+
+.curso-pagina .detalles-curso {
     padding: 20px 0;
 }
-/* pagina interna formulario*/
-.titulo-formulario{
+
+/* pagina interna contacto */
+.contenedor-formulario {
+    background-color: white;
+    padding: 30px;
+}
+
+.campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    flex: 0 0 80px;
+}
+
+.campo input {
+    padding: 8px 6px;
+    flex: 1;
+}
+
+.campo textarea {
+    flex: 1;
+}
+
+.titulo-formulario {
     text-align: center;
 }
+
 @media (min-width: 769px) {
     .header {
         height: 600px;
     }
 
-    .menu{
+    .menu {
         margin: 0;
         height: inherit;
     }
-    .menu ul{
+
+    .menu ul {
         height: inherit;
     }
+
     .menu ul li {
         height: inherit;
         display: inline-block;
@@ -252,10 +289,12 @@ main {
     .menu ul li:last-of-type {
         margin-right: 0;
     }
-    .menu ul li a{
+
+    .menu ul li a {
         padding: 20px;
         display: flex;
     }
+
     .content-hero {
         margin-top: 130px;
     }
@@ -276,7 +315,8 @@ main {
     }
 
     /*Talleres y cursos*/
-    main {
+    .main-prinicipal {
+        margin-top: 0;
         padding: 20px 0;
         flex-direction: row;
         justify-content: space-between;
@@ -295,26 +335,54 @@ main {
     .boton {
         width: auto;
     }
+
     /* pagina interior nosotros */
-    .detalles-nosotros{
+    .detalles-nosotros {
         display: flex;
         justify-content: space-between;
     }
-    .contenedor-img{
-           flex: 0 0 calc(50% - 10px);
-    }
-    .informacion-nosotros{
+
+    .contenedor-img {
         flex: 0 0 calc(50% - 10px);
     }
+
+    .informacion-nosotros {
+        flex: 0 0 calc(50% - 10px);
+    }
+
     /* pagina interior cursos */
-    .curso-pagina{
+    .curso-pagina {
         justify-content: space-between;
         display: flex;
     }
-    .curso-pagina .contenedor-img{
+
+    .curso-pagina .contenedor-img {
         flex: 0 0 calc(34% - 20px);
     }
-    .curso-pagina .detalles-curso{
+
+    .curso-pagina .detalles-curso {
         flex: 0 0 calc(66% - 10px);
+    }
+
+    /* pagina interna contacto */
+    .contacto {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contacto .imagen-contacto {
+        flex: 0 0 100%;
+    }
+
+    .contenedor-formulario {
+        flex: 0 0 calc(66% - 20px);
+        margin-top: -100px;
+        padding: 60px;
+    }
+
+    .enviar {
+        display: flex;
+        justify-content: flex-end;
     }
 }
