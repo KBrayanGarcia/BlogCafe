@@ -49,6 +49,7 @@ img {
 }
 
 p {
+    margin: 0;
     font-size: 1.375em;
 }
 
@@ -199,7 +200,15 @@ main {
     color: white;
     font-size: 2.2em;
 }
-
+/* Paginas interiores */
+/* nosotros */
+.informacion-nosotros{
+    line-height: 2;
+}
+.titulo-nosotros{
+    text-align: center;
+    padding: 20px 0;
+}
 @media (min-width: 769px) {
     .header {
         height: 600px;
@@ -263,4 +272,18 @@ main {
     .boton {
         width: auto;
     }
+    /* pagina interior nosotros */
+    .detalles-nosotros{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contenedor-img{
+        display: flex;
+        align-items: center;
+        flex: 0 0 calc(50% - 10px);
+    }
+    .informacion-nosotros{
+        flex: 0 0 calc(50% - 10px);
+    }
+
 }
